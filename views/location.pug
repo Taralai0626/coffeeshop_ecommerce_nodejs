@@ -1,0 +1,82 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  script(src='https://kit.fontawesome.com/6ffc809cc4.js' crossorigin='anonymous')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous')
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js' integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2' crossorigin='anonymous')
+  link(rel='stylesheet' href='/style.css' type='text/css')
+  link(rel='stylesheet' href='/home.css' type='text/css')
+  title Cool Beans
+header#header
+  #header-content.m-6
+    nav#main-menu.navbar.navbar-expand-lg.navbar-light.bg-light
+      .container-fluid
+        a#site-name(href='/')
+          | Cool Beans
+          img.navbar-brand(src='/images/logo.png' alt='a logo of coffee mug')
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarCollapse')
+          span.navbar-toggler-icon
+        #navbarCollapse.collapse.navbar-collapse
+          .navbar-nav
+            a.menu-list.nav-item.nav-link(href='/index') Home
+            a.menu-list.nav-item.nav-link(href='#') Shop
+            a.menu-list.nav-item.nav-link.active(href='#') Location
+            a.menu-list.nav-item.nav-link(href='/learn' tabindex='-1') Learn
+          .navbar-nav.ms-auto
+            a.nav-item.nav-link(href='#')
+              | Search 
+              i.fa-solid.fa-magnifying-glass
+            a.nav-item.nav-link(href='#')
+              | Login 
+              i.fa-solid.fa-right-to-bracket
+            a.nav-item.nav-link(href='#')
+              | My Cart 
+              i.fa-solid.fa-cart-arrow-down
+main.main_container
+  nav(style="--bs-breadcrumb-divider: '>';" aria-label='breadcrumb')
+    ol.breadcrumb
+      li.breadcrumb-item
+        a(href='/index') Home
+      li.breadcrumb-item
+        a(href='#') Shop
+      li.breadcrumb-item.active(aria-current='page') Location
+      li.breadcrumb-item
+        a(href='/learn') Learn
+  .learn-title
+    h1 Location
+  #carouselExampleCaptions.carousel.slide(data-bs-ride='false')
+    .carousel-indicators
+      button.active(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+      button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='1' aria-label='Slide 2')
+      button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='2' aria-label='Slide 3')
+    .carousel-inner
+      .carousel-item.active
+        img.d-block.w-100(src='/images/Toronto.jpeg' alt='a photo of Toronto night view with lights shine on the lake')
+        // https://cdn.britannica.com/93/94493-050-35524FED/Toronto.jpg
+        .carousel-caption.d-none.d-md-block
+          h5 Toronto, Ontario
+          p S100 Queen St W, Toronto, ON M5H 2N2
+      .carousel-item
+        img.d-block.w-100(src='/images/montreal.jpeg' alt='a patio from a restaurant in old montreal at night time')
+        // https://traveler.marriott.com/wp-content/uploads/2019/12/ALMY_EKT0WP_SaintPaulSt_Montreal.jpg
+        .carousel-caption.d-none.d-md-block
+          h5 Montreal, Quebec
+          p 275 Notre-Dame St. East, Montreal, Quebec H2Y 1C6
+      .carousel-item
+        img.d-block.w-100(src='/images/calgary.jpeg' alt='a night view of Peace Bridge in Calgary')
+        // https://content.r9cdn.net/rimg/dimg/4f/de/8c8aa831-city-27482-16ae6700d55.jpg?crop=true&width=1366&height=768&xhint=822&yhint=640
+        .carousel-caption.d-none.d-md-block
+          h5 Calgary, Alberta
+          p 800 Macleod Trail SE, Calgary, AB T2G 5E6
+    button.carousel-control-prev(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.visually-hidden Previous
+    button.carousel-control-next(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.visually-hidden Next
+footer.footer-wrapper
+  p &copy; Copyright Cool Beans, 2022.
+// <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+// <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>

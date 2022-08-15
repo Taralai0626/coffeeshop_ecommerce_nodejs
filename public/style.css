@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Candal&family=Merriweather:ital@1&family=Nunito+Sans:ital,wght@1,900&family=Roboto:ital@1&family=Source+Sans+Pro:wght@700&family=Space+Mono:ital@1&family=Tiro+Telugu&family=Tourney:wght@100&display=swap');
+/* h1 { */
+  /* display: block; */
+/* } */
+body{
+  background-color: #feda97;
+}
+.learn-title h1{
+  display: flex;
+  justify-content: center;
+  font-family: 'Tiro Telugu', serif;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#header{
+  padding-bottom: 80px;
+  /* z-index: 300; */
+}
+
+/******** image layout ********/
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 40%;
+  padding: 0 10px;
+}
+
+.column img {
+  margin-top: 20px;
+  width:100%;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+/****** image titles ******/
+.img-title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  font-size: 3em;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  transition:all 1s linear; 
+  color: white;
+}
+.img-wrapper{
+  position: relative;
+  margin-top: 0;
+}
+.img-wrapper img{
+  transition:all 1s linear; 
+}
+.img-wrapper img:hover{
+  opacity: 0.8;
+}
+
+/****** images for location page ******/
+.carousel-item img{
+  height: 700px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  .carousel-item img{
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .carousel-item img{
+    
+    height: 250px;
+  }
+}

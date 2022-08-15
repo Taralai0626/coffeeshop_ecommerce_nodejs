@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Candal&family=Merriweather:ital@1&family=Nunito+Sans:ital,wght@1,900&family=Roboto:ital@1&family=Source+Sans+Pro:wght@700&family=Space+Mono:ital@1&family=Tiro+Telugu&family=Tourney:wght@100&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #feda97;
+}
+/********* HEADER GENERAL **********/
+
+#main-menu {
+  background-color: #f4bf5e !important;
+}
+#site-name img {
+  width: 80px;
+}
+#site-name{
+  display: flex;
+  align-items:flex-end;
+  padding-left: 0.6em;
+  font-size: 3em;
+  font-family: 'Bungee Inline', cursive;
+  color: #582f0e;
+  text-transform: uppercase;
+}
+
+/******* TEXT DECORATION ********/
+a {
+  text-decoration: none;
+  color: black; 
+}
+a:hover{
+  color:rgb(233, 161, 66);
+}
+
+/******* main background *******/
+.main-img {
+  width: 100%;
+  padding-bottom: 5%;
+}
+.mainImg-wrapper {
+  overflow:hidden;
+  text-align:center;
+  width:100%;
+}
+
+.slogan-wrapper{
+  position: absolute;
+  top: 30%;
+  left: 38%;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+.slogan-title_big{
+  width: 100%;
+  font-size: 3em;
+  font-family: 'Bungee Inline', cursive;
+}
+.slogan-title_bigger{
+  width: 100%;
+  font-size: 5em;
+}
+.slogan-title_small{
+  width: 100%;
+  font-size: 2em;
+  font-family: 'Candal', sans-serif;
+}
+
+/******* features *******/
+.cool-beans_wrapper{
+  text-align: center;  
+  padding-bottom: 2em;
+}
+.cool-beans_h1{
+  font-size: 30px;
+  font-family: 'Tiro Telugu', serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.sale-img {
+  width: 300px;
+  height: 300px;
+}
+.sale-img_wrapper{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: 0 5em;
+  text-align: center;
+  font-size: 22px;
+  padding-bottom: 2em;
+}
+.sale-img_wrapper a:hover{
+  color: #936639;
+}
+/****** Footer *******/
+.footer-wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+  text-transform: uppercase;
+}
+
+/****** Breadcrumb from boostrap ******/
+.breadcrumb{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5em;
+  margin-top: -50px;
+}
+
+/* @media screen and (max-width: 2600px) { */
+  /* .slogan-wrapper { */
+    /* font-size: 40px; */
+    /* text-align: center; */
+    /* position: absolute; */
+    /* top: 20%; */
+    /* left: 30%; */
+  /* } */
+  /* .sale-img_wrapper1{ */
+    /* display: flex; */
+/*  */
+    /* margin-left: 2em; */
+  /* } */
+/* } */
+@media screen and (max-width: 1300px) {
+  .slogan-wrapper {
+    font-size: 15px;
+    text-align: center;
+    position: inherit;
+    margin-top: -400px;
+    margin-bottom: 200px;
+  }
+  .slogan-title_big, .slogan-title_bigger,
+  .slogan-title_small{
+    margin: 0;
+  }
+  #site-name{
+    font-size: 3em;
+  }
+  .sale-img_wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: -2em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .slogan-wrapper {
+    font-size: 12px;
+    text-align: center;
+    position: inherit;
+    margin-top: -410px;
+    margin-bottom: 100px;
+  }
+  #site-name{
+    font-size: 3em;
+  }
+  .sale-img_wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: -50px;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .slogan-wrapper {
+    font-size: 8px;
+    position: inherit;
+    margin-top: -300px;
+    margin-bottom: 80px;
+  }
+  .sale-img_wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 0;
+    gap: 25px;
+    /* display: flex; */
+    /* flex-direction: column; */
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .slogan-wrapper {
+    font-size: 7px;
+    position: inherit;
+    margin-top: -190px;
+    margin-bottom: 80px;
+  }
+  .slogan-title_big, .slogan-title_bigger,
+  .slogan-title_small{
+    margin: 0;
+  }
+  #site-name{
+    font-size: 30px;
+  }
+  #site-name img{
+    width: 50px;
+  }
+  .sale-img_wrapper{
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 2em;
+    gap: 100px;
+  }
+  .cool-beans_h1{
+    font-size: 22px;
+  }
+}
+

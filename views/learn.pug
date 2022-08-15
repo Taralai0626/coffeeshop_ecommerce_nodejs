@@ -1,0 +1,83 @@
+block variables 
+
+block variables 
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  script(src='https://kit.fontawesome.com/6ffc809cc4.js' crossorigin='anonymous')
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor' crossorigin='anonymous')
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js' integrity='sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2' crossorigin='anonymous')
+  link(rel='stylesheet' href='/home.css' type='text/css')
+  link(rel='stylesheet' href='/style.css' type='text/css')
+  title Cool Beans
+header#header
+  #header-content.m-6
+    nav#main-menu.navbar.navbar-expand-lg.navbar-light.bg-light
+      .container-fluid
+        a#site-name(href='/')
+          | Cool Beans
+          img.navbar-brand(src='/images/logo.png' alt='a logo of coffee mug')
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarCollapse')
+          span.navbar-toggler-icon
+        #navbarCollapse.collapse.navbar-collapse
+          .navbar-nav
+            a.menu-list.nav-item.nav-link(href='/index') Home
+            a.menu-list.nav-item.nav-link(href='#') Shop
+            a.menu-list.nav-item.nav-link(href='/location') Locations
+            a.menu-list.nav-item.nav-link.active(href='#') Learn
+          .navbar-nav.ms-auto
+            a.nav-item.nav-link(href='#')
+              | Search 
+              i.fa-solid.fa-magnifying-glass
+            a.nav-item.nav-link(href='#')
+              | Login 
+              i.fa-solid.fa-right-to-bracket
+            a.nav-item.nav-link(href='#')
+              | My Cart 
+              i.fa-solid.fa-cart-arrow-down
+main.main_container
+  nav(style="--bs-breadcrumb-divider: '>';" aria-label='breadcrumb')
+    ol.breadcrumb
+      li.breadcrumb-item
+        a(href='/index') Home
+      li.breadcrumb-item
+        a(href='#') Shop
+      li.breadcrumb-item
+        a(href='/location') Location
+      li.breadcrumb-item.active(aria-current='page') Learn
+  .learn-title
+    h1 Brew Guides
+  .row
+    .column
+      .img-wrapper
+        a(href='/')
+          img(src='/images/Chemex.png' alt='a chemex coffeemaker with wood holder')
+        h1.img-title Chemex
+      .img-wrapper
+        a(href='/')
+          img(src='/images/french_press.jpeg' alt='a french coffeemaker with a coffee mug on a wooden tray')
+        h1.img-title French Press
+    .column
+      .img-wrapper
+        a(href='/')
+          img(src='/images/Aeropress.jpeg' alt='an aeropress coffeemaker with a red coffee mug on grass')
+        h1.img-title Aeropress
+      .img-wrapper
+        a(href='/')
+          img(src='/images/moka_pot.jpeg' alt='a white metal moka pot with wooden holder pouring coffee in a glass coffee mug')
+        h1.img-title Moka Pot
+    .column
+      .img-wrapper
+        a(href='/')
+          img(src='/images/espresso.jpeg' alt='a cup of espresso in a white coffee much and try with lots of coffee beans on the table')
+        h1.img-title Espresso
+      .img-wrapper
+        a(href='/')
+          img(src='/images/cold-brew.jpeg' alt='two glasses of iced cold brew and a half pint of coffee')
+        h1.img-title Cold Brew
+footer.footer-wrapper
+  p &copy; Copyright Cool Beans, 2022.
+// <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+// <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
